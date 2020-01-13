@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/">
+        <file>data.xml</file>
+        <file>main_desktop.css</file>
+        <file>main_desktop_big.css</file>
+        <file>main_desktop_small.css</file>
+        <file>main_mobile.css</file>
+        <file>main_mobile_big.css</file>
+        <file>main_mobile_small.css</file>
+        <file>pics/arrow_down_mainscreen.png</file>
+        <file>pics/arrow_up_mainscreen.png</file>
+        <file>pics/logo-demlabs-ink-2.png</file>
+        <file>pics/multirouting_icon.png</file>
+        <file>pics/off_icon_active@3x.png</file>
+        <file>pics/off_icon_noactive@2x.png</file>
+        <file>pics/logo_mobile@3x.png</file>
+        <file>pics/logo_main@2x.png</file>
+        <file>pics/logo-divevpn.png</file>
+        <file>pics/DiveVPN.icns</file>
+        <file>pics/fav_icon.png</file>
+        <file>pics/fav_icon_select.png</file>
+        <file>pics/more_icon.png</file>
+        <file>pics/more_icon_select.png</file>
+        <file>pics/back_icon_dark.png</file>
+        <file>pics/default_icon.png</file>
+        <file>pics/edit_icon.png</file>
+        <file>pics/remove_icon.png</file>
+        <file>pics/icon_startmenu.png</file>
+        <file>pics/red_light.png</file>
+        <file>pics/drop-down_icon_mainscreen.png</file>
+        <file>pics/checkbox_icon_mainscreen.png</file>
+        <file>pics/checkbox_no_icon_mainscreen.png</file>
+        <file>pics/green_light.png</file>
+        <file>pics/menu_icon_dark.png</file>
+        <file>pics/off_btn_icon.png</file>
+        <file>pics/profile_icon_dark.png</file>
+        <file>pics/settings_icon_dark.png</file>
+        <file>pics/demlabs_logo.png</file>
+        <file>pics/drop-down_up_icon_mainscreen.png</file>
+        <file>pics/drop-down_hover_icon_mainscreen.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1280 @@
+*{
+    font: 12pt bolds;
+    color: rgb(255,255,255);
+}
+
+QMessageBox {
+    background: rgb(80, 56, 131);
+}
+
+QMessageBox QPushButton {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: rgb(80, 56, 131);
+    width:  50px;
+    height: 30px;
+}
+
+QMessageBox QPushButton:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#graphicsView{
+        border: none;
+}
+
+#cbLocationV {
+        color: rgb(0,0,0);
+}
+
+#bgUsername {
+    background-color: rgb(240, 252, 254);
+    border: none;
+}
+
+#bgStatistics{
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*******************************************************************************
+**			               Common
+*******************************************************************************/
+
+QMainWindow,
+#mainMenuPages{
+    background-color:  qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #5B5392, stop:0.3625 #544F7E stop:1 #1F2561);
+    border-width: 0px;
+}
+
+QLineEdit
+{
+    lineedit-password-character: 42;
+}
+
+QToolButton:focus,
+QPushButton:focus,
+QComboBox QListView:focus {
+    outline: none;
+}
+
+/* ------------------------------- btMenu ------------------------------- */
+
+/*Menu button a and spacing at right top corner: */
+#btMenu,
+#wgTopRightSpacing {
+    min-width: 22px;
+    max-width: 22px;
+    min-height:22px;
+    min-height:22px;
+    border:    none;
+}
+
+#btMenu {
+    image: url(:/pics/menu_icon.png);
+}
+
+#btMenu:hover {
+    image: url(:/pics/menu_icon_hover.png);
+}
+
+/* ------------------------------- btBack ------------------------------- */
+
+/*Back button a and spacing at right top corner: */
+#btBack,
+#wgBackSpacing {
+    min-height:22px;
+    max-height:22px;
+    min-width: 55px;
+    max-width: 55px;
+    text-align: left;
+}
+
+#btBack {
+    font: 25 9px "Roboto";
+    color: white;
+    border: none;
+    icon-size: 22px;
+}
+
+#btBack:hover,
+#btBack:pressed {
+    font: 9px "Roboto";
+}
+
+/* ------------------------------- lbTitle ------------------------------- */
+
+#lbTitle {
+    font: 20px "Roboto";
+    color: white;
+    min-height: 26px;
+    max-height: 26px;
+}
+
+/* ------------------------------- lbMessage ------------------------------- */
+
+#lbMessage {
+    font: 10px "Roboto";
+    color: #DADA63;
+}
+
+#SignUpSmall #lbMessage {
+    padding-bottom: 11px;
+}
+
+/* ------------------------------- Edits ------------------------------- */
+
+#wgEdits {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+#lblLogin,
+#lblMail,
+#lblPassword,
+#lblConfPassword,
+#lblServer,
+#btShow,
+#btConfShow {
+    max-width:  22px;
+    max-height: 22px;
+    min-width:  22px;
+    min-height: 22px;
+}
+
+#lineUsername,
+#linePassword,
+#lineConfPassword,
+#lineMail,
+#lineUpstream {
+    color: white;
+}
+
+
+/* ------------------------------- edMail ------------------------------- */
+
+#lblMail {
+    image: url(:/pics/mail_icon.png);
+}
+
+#edMail {
+    background-color:  transparent;
+    color: white;
+    font: 12px "Roboto";
+    border: none;
+    min-height: 22;
+    max-height: 22;
+    padding-right: 31; /*The value of this property should be equal to the
+                       width of the button pbShow + spacing between lblLogin and elMail.
+                       Required for horizontal centering of text
+                       in the login and password fields.*/
+}
+
+/* For StyleHandler: */
+#edMail [empty]{
+    color: rgb(217, 217, 227);
+}
+
+/* For StyleHandler: */
+#edMail [filled]{
+    color: white;
+}
+
+/* For StyleHandler: */
+#edMail [checkError]{
+    color: #DADA63;
+}
+
+/* ------------------------------- edPassword / edConfPassword ------------------------------- */
+
+#lblPassword,
+#lblConfPassword {
+    image: url(:/pics/psw_icon.png);
+}
+
+#edPassword,
+#edConfPassword {
+    background-color:  transparent;
+    color: white;
+    font: 12px "Roboto";
+    border: none;
+    min-height: 22;
+    max-height: 22;
+    padding-right: 9; /*The value of this property should be equal to the
+                       spacing between lblLogin and elMail.
+                       Required for horizontal centering of text
+                       in the login and password fields.*/
+}
+
+/* For StyleHandler: */
+#edPassword [empty]{
+    color: rgb(217, 217, 227);
+}
+
+/* For StyleHandler: */
+#edPassword [filled]{
+    color: white;
+}
+
+/* For StyleHandler: */
+#edPassword [checkError]{
+    color: #DADA63;
+}
+
+/* ------------------------------- btShow ------------------------------- */
+
+#btShow,
+#btConfShow {
+    image: url(:/pics/show_icon.png);
+    background-color: transparent;
+    border: none;
+}
+
+#btShow:checked,
+#btConfShow:checked {
+    image: url(:/pics/hide_icon.png);
+}
+
+
+/* ------------------------------- QComboBox ------------------------------- */
+
+#cbUpstream {
+    combobox-popup: 0;
+    border: none;
+    background-color:  transparent;
+}
+
+#cbUpstream QListView {
+    background-color: #E2E2EA;
+    border: none;
+}
+
+#cbUpstream QListView::item {
+    color: #080D38;
+    border: none;
+}
+
+#cbUpstream QListView::item:selected {
+    background-color: #503883;
+    color: white;
+}
+
+#cbUpstream::separator{
+    background:  #CDCBE5;
+    border:none;
+}
+
+#cbUpstream QScrollBar:vertical {
+    background: rgba(12, 0, 116, 0.5);
+    max-width: 2px;
+}
+
+#cbUpstream QScrollBar::handle:vertical {
+    background: #9A86C4;
+}
+
+#cbUpstream QScrollBar::add-line:vertical,
+#cbUpstream QScrollBar::sub-line:vertical {
+     height: 0px;
+}
+
+#cbUpstream::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: bottom right;
+    border: none;
+}
+
+/* ------------------------------- btLogin / btCreate / btSend ------------------------------- */
+
+#LoginSmall          #btLogin,
+#SignUpSmall         #btCreate,
+#ForgotPasswordSmall #btSend,
+#DashboardSmall      #btDisconnect {
+    background-color: white;
+    border: 1px solid white;
+}
+
+#LoginSmall          #btLogin,
+#SignUpSmall         #btCreate,
+#ForgotPasswordSmall #btSend {
+    min-height: 25px;
+    max-height: 25px;
+    color: #080D38;
+    font: 10px "Roboto";
+    border-radius: 13px;
+}
+
+#LoginSmall          #btLogin,
+#SignUpSmall         #btCreate {
+    min-width: 118px;
+    max-width: 118px;
+}
+
+#LoginSmall          #btLogin:hover,
+#SignUpSmall         #btCreate:hover,
+#ForgotPasswordSmall #btSend:hover,
+#DashboardSmall      #btDisconnect:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/*******************************************************************************
+**			            Login Layout screen
+*********************************************************************************/
+
+#AnimationScreenFullScreen #changingScreen{
+    max-width:  640px;
+    min-width:  640px;
+    min-height: 400px;
+    max-height: 400px;
+    border: none;
+}
+
+
+/*******************************************************************************
+**			            LoginSmall screen
+********************************************************************************
+
+Moved to common part:
+----------------------
+#btMenu
+#btMenu:hover
+#frameCap
+
+#lbTitle
+#lbMessage
+--------------------------*/
+
+/* Logo icon */
+#LoginSmall #Logo {
+    image: url(:/pics/logo-divevpn.png);
+    max-width:  100px;
+    max-height: 100px;
+    min-width:  100px;
+    min-height: 100px;
+}
+
+#LoginSmall #lbMessage {
+    min-height: 33px;
+    max-height: 33px;
+}
+
+/* Moved to common part:
+--------------------------
+#wgEdits
+
+#lblLogin (size)
+#edMail
+#lineUsername
+
+#lblPassword (size, image)
+#edPassword
+#btShow
+#linePassword
+
+#lblServer (size)
+#lineUpstream
+--------------------------*/
+
+
+#LoginSmall #lblLogin {
+    image: url(:/pics/user_icon.png);
+}
+
+
+#LoginSmall #lblServer {
+    image: url(:/pics/server_icon.png);
+}
+
+/* ------------------------------- QComboBox ------------------------------- */
+
+/* Moved to common part:
+--------------------------
+#cbUpstream
+--------------------------*/
+
+#LoginSmall #cbUpstream {
+    color: white;
+    padding-left: 4px;
+    font: 12px "Roboto";
+    min-height: 22px;
+    max-height: 22px;
+}
+
+#LoginSmall #cbUpstream QListView::item {
+     height: 24px;
+     padding-left: 1px;
+}
+
+#LoginSmall #cbUpstream::separator {
+    margin-left: 32px;
+}
+
+
+#LoginSmall #cbUpstream::drop-down {
+    height: 22px;
+    width:  22px;
+}
+
+#LoginSmall #cbUpstream::down-arrow {
+    height: 22px;
+    width:  22px;
+    image: url(:/pics/arrow_down_mainscreen.png);
+}
+
+#LoginSmall #cbUpstream::down-arrow:on {
+    image: url(:/pics/arrow_up_mainscreen.png);
+}
+
+/* Moved to common part:
+--------------------------
+#btLogin
+--------------------------*/
+
+
+/* ------------------------------- btSignUp ------------------------------- */
+
+#LoginSmall #btSignUp {
+    font: 25 10px "Roboto";
+    color: white;
+    border: none;
+    min-height: 13px;
+    max-height: 13px;
+}
+
+#LoginSmall #btSignUp:hover,
+#LoginSmall #btSignUp:pressed {
+    font: 10px "Roboto";
+} 
+
+/* ------------------------------- btLostPassword ------------------------------- */
+
+#LoginSmall #btLostPassword {
+    font: 25 9px "Roboto";
+    color: white;
+    border: none;
+    min-height: 12;
+    max-height: 12;
+}
+
+#LoginSmall  #btLostPassword:hover,
+#LoginSmall  #btLostPassword:pressed {
+    font: 9px "Roboto";
+} 
+
+
+
+/*******************************************************************************
+**			            SignUpSmall screen
+*******************************************************************************/
+
+/* Moved to common part:
+--------------------------
+#btBack
+#wgBackSpacing
+
+#lbTitle
+--------------------------*/
+
+#SignUpSmall #lbMessage {
+    min-height: 76px;
+    max-height: 76px;
+}
+
+/* Moved to common part:
+--------------------------
+#wgEdits
+
+#lblMail (size, image)
+#edMail
+#lineUsername
+
+#lblPassword (size, image)
+#edPassword
+#btShow
+#linePassword
+
+#lblConfPassword (size, image)
+#btConfShow
+
+#lblServer
+#lineUpstream
+
+#btCreate
+--------------------------*/
+
+
+#SignUpSmall #lblSignUpWith {
+    font: 9px "Roboto";
+    color: white;
+    min-height: 12px;
+    max-height: 12px;
+}
+
+#SignUpSmall #btFacebook,
+#SignUpSmall #btTwitter,
+#SignUpSmall #btGoogle {
+    max-width:  25px;
+    max-height: 25px;
+    min-width:  25px;
+    min-height: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+#SignUpSmall #btFacebook {
+    image: url(:/pics/facebook_icon.png);
+}
+
+#SignUpSmall #btTwitter {
+    image: url(:/pics/twitter_icon.png);
+}
+
+#SignUpSmall #btGoogle {
+    image: url(:/pics/google_icon.png);
+}
+
+/*******************************************************************************
+**			            ForgotPasswordSmall screen
+*******************************************************************************/
+
+/* Moved to common part:
+--------------------------
+#btBack
+#wgBackSpacing
+
+#lbTitle
+--------------------------*/
+
+#ForgotPasswordSmall #lblTextFirst,
+#ForgotPasswordSmall #lblTextSecond {
+    font: 25 10px "Roboto";
+    color: white;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+/* Moved to common part:
+--------------------------
+#lbMessage
+--------------------------*/
+
+#ForgotPasswordSmall #lbMessage {
+    min-height: 27px;
+    max-height: 27px;
+}
+
+/* Moved to common part:
+--------------------------
+#wgEdits
+
+#lblMail (size, image)
+#edMail
+#lineMail
+
+#btSend
+--------------------------*/
+
+#ForgotPasswordSmall #btSend {
+    max-width: 152px;
+    min-width: 152px;
+}
+
+
+/*******************************************************************************
+**			        DashboardSmall screen
+********************************************************************************
+
+Moved to common part:
+----------------------
+#btMenu
+#wgTopRightSpacing
+----------------------*/
+
+/* ------------------------------- lbMessage ------------------------------- */
+
+#DashboardSmall #lbMessage {
+    min-width:    0px;
+    min-height:  23px;
+    max-height:  23px;
+    margin-right: 5px;
+}
+
+/* ---------- btMessageClose ---------- */
+
+#DashboardSmall #btMessageClose {
+    min-width: 23px;
+    max-width: 23px;
+    min-height:23px;
+    max-height:23px;
+    background-color: transparent;
+    border: none;
+}
+
+#btMessageClose::image{
+    min-width: 11px;
+    max-width: 11px;
+    min-height:11px;
+    max-height:11px;
+    image: url(":/pics/close_icon@3x.png");
+}
+
+#btMessageClose::image:hover{
+}
+
+#btMessageClose::text{
+    min-width: 0px;
+    max-width: 0px;
+}
+
+#btMessageClose::text:hover {}
+
+/* ------------------------------- Multirouting ------------------------------- */
+
+#DashboardSmall #wtMultirouting {
+    background-color: #EDECF3;
+    max-width:  220px;
+    min-width:  220px;
+    background-clip:padding; /*for Shadow*/
+    border-bottom: 1px solid rgba(39, 0, 116, 0.2); /*Shadow*/
+}
+
+
+/* ------------------------------- btMultirouting ------------------------------- */
+
+#DashboardSmall #btMultirouting {
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 31px;
+    max-height: 31px;
+    border: none;
+}
+
+#DashboardSmall #btMultirouting:hover {
+    background-color: #503883;
+}
+
+/* --------- leftSpacing ---------- */
+
+#DashboardSmall #btMultirouting #leftSpacing {
+    max-width: 0px;
+}
+
+/* --------- 1. image --------- */
+
+#DashboardSmall #btMultirouting #image {
+    min-width: 31px;
+    max-width: 31px;
+    min-height:31px;
+    max-height:31px;
+    image-position: center;
+    padding-left: 6px;
+}
+
+#btMultirouting::image {
+    image: url(:/pics/multirouting_icon.png);
+}
+
+#btMultirouting::image:hover {
+    image: url(:/pics/multirouting_icon_hover.png);
+}
+
+#btMultirouting::image:checked {}
+
+#btMultirouting::image:checked:hover {}
+
+/* --------- 2. text --------- */
+
+#DashboardSmall #btMultirouting #text {
+    font: 11px "Roboto";
+    margin-left: 1px;
+}
+
+#btMultirouting::text {
+    color: #080D38;
+}
+
+#btMultirouting::text:hover {
+    color: white;
+}
+
+#btMultirouting::text:checked {}
+
+#btMultirouting::text:checked:hover {}
+
+/* --------- 3. checkbox --------- */
+
+#DashboardSmall #btMultirouting #checkbox {
+    min-width:  31px;
+    max-width:  31px;
+    min-height: 31px;
+    min-height: 31px;
+}
+
+#btMultirouting::checkbox {
+    image: url(:/pics/checkbox_no_icon_mainscreen.png);
+}
+
+#btMultirouting::checkbox:hover {
+    image: url(:/pics/checkbox_no_icon_hover_mainscreen.png);
+}
+
+#btMultirouting::checkbox:checked {
+    image: url(:/pics/checkbox_icon_mainscreen.png);
+}
+
+#btMultirouting::checkbox:checked:hover {
+    image: url(:/pics/checkbox_icon_hover_mainscreen.png);
+}
+
+/* --------- rightSpacing --------- */
+
+#DashboardSmall #btMultirouting #rightSpacing {
+    min-width: 0px;
+    max-width: 0px;
+}
+
+/* ------------------------------- lineMultirouting ------------------------------- */
+
+
+
+
+#DashboardSmall #lineMultirouting {
+    background:  #CDCBE5;
+    border: none;
+    margin-left: 37px;
+    min-height: 1px;
+    max-height: 1px;
+}
+
+
+/* ------------------------------- cbUpstream ------------------------------- */
+
+/* Moved to common part:
+--------------------------
+#cbUpstream
+--------------------------*/
+
+#DashboardSmall #cbUpstream {
+    color: #080D38;
+    padding-left: 6px;
+    font: 11px "Roboto";
+    min-height: 31px;
+    max-height: 31px;
+}
+
+#DashboardSmall #cbUpstream:hover {
+    color: white;
+    background-color: #503883;
+}
+
+#DashboardSmall #cbUpstream QListView {
+    max-height: 114px;
+    min-height: 114px;
+}
+
+#DashboardSmall #cbUpstream QListView::item {
+    height: 31px;
+    padding-left: 3px;
+}
+
+#DashboardSmall #cbUpstream::separator{
+    margin-left: 36px;
+}
+
+#DashboardSmall #cbUpstream::drop-down {
+    height: 31px;
+    width:  31px;
+}
+
+#DashboardSmall #cbUpstream::down-arrow {
+    height: 31px;
+    width:  31px;
+    image: url(:/pics/drop-down_icon_mainscreen.png);
+}
+
+#cbUpstream::down-arrow:hover {
+    image: url(:/pics/drop-down_hover_icon_mainscreen.png);
+}
+
+#DashboardSmall #cbUpstream::down-arrow:on {
+    image: url(:/pics/drop-down_up_icon_mainscreen.png);
+}
+
+
+/* ------------------------------- btDisconnect ------------------------------- */
+#DashboardSmall #btDisconnect {
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 29px;
+    max-height: 29px;
+    border-radius: 15px;
+}
+
+#DashboardSmall #btDisconnect #image {
+    min-width: 24px;
+    max-width: 24px;
+    min-height:24px;
+    max-height:24px;
+    image-position: center;
+}
+
+#btDisconnect::image {
+    image: url(:/pics/off_btn_icon.png);
+}
+
+#btDisconnect::image:hover {
+    image: url(:/pics/off_btn_icon_hover.png);
+}
+
+#DashboardSmall #btDisconnect #text {
+    margin-left: 3px;
+    font: 13px "Roboto";
+    color: #080D38;
+}
+
+#btDisconnect::text {}
+
+#btDisconnect::text:hover {
+    color: white;
+}
+
+
+
+
+/* ------------------------------- bgStatistics ------------------------------- */
+
+#DashboardSmall #graphicsView {
+    background-color: #EEEDF2;
+    border: 1px solid white;
+    /* width and height must be set in QtDesigner*/
+}
+
+/*for graphics. Implements the active property.*/
+#DashboardSmall #shGrid [active]{
+    color: rgba(22, 3, 198, 0.5);
+    depth: 0.1;
+}
+
+/*for graphics. Implements the active property.*/
+#DashboardSmall #shChartDownload [active]{
+    color: #00B52B;
+    depth: 0.5;
+    background-color: rgba(0, 181, 43, 0.05);
+}
+
+/*for graphics. Implements the active property.*/
+#DashboardSmall #shChartUpload [active]{
+    color: #03A7C6;
+    depth: 0.5;
+    background-color: rgba(3, 167, 198, 0.08);
+}
+
+
+/* ------------------------------- Datas  ------------------------------- */
+
+#DashboardSmall #bgStatistics{
+    border: none;
+    background-color: #EEEDF2;
+    min-width:  250px;
+    max-width:  250px;
+    min-height:  60px;
+    max-height:  60px;
+}
+
+#DashboardSmall #lblTitleDownloadSpeed,
+#DashboardSmall #lblDownloadSpeed {
+    color: #00B52B;
+    font: 500 7px "Roboto";
+}
+
+#DashboardSmall #lblTitleUploadSpeed ,
+#DashboardSmall #lblUploadSpeed {
+    color: #03A7C6;
+    font: 500 7px "Roboto";
+}
+
+#DashboardSmall #lbTitleDownload ,       #DashboardSmall #lbReceived,
+#DashboardSmall #lblTitlePacketsRead ,   #DashboardSmall #lblPacketsRead,
+#DashboardSmall #lblTitleTimeConnected , #DashboardSmall #lblTimeConnected,
+#DashboardSmall #lblTitleUpload ,        #DashboardSmall #lbSent,
+#DashboardSmall #lblTitlePacketsWritten, #DashboardSmall #lblPacketsWritten,
+#DashboardSmall #lblTitleLastConnection, #DashboardSmall #lblLastConnection {
+    color: #080D38;
+    font: 7px "Roboto";
+}
+
+/* ------------------------------- Indicators  ------------------------------- */
+
+#DashboardSmall #bgAuth,
+#DashboardSmall #bgStream,
+#DashboardSmall #bgConnection {
+    background-color: #8B85A8;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#DashboardSmall #lbAuthorization,
+#DashboardSmall #lbStream,
+#DashboardSmall #lbTunnel {
+    image: url(:/pics/red_light.png);
+    max-width:  21px;
+    max-height: 21px;
+    min-width:  21px;
+    min-height: 21px;
+}
+
+#DashboardSmall #lbAuthorization [active] {
+    image: url(:/pics/green_light.png);
+}
+
+#DashboardSmall #lbStream [active] {
+    image: url(:/pics/green_light.png);
+}
+
+ #DashboardSmall #lbTunnel [active] {
+    image: url(:/pics/green_light.png);
+}
+
+#DashboardSmall #lbAuthorization [passive] {
+    image: url(:/pics/red_light.png);
+}
+
+#DashboardSmall #lbStream [passive] {
+    image: url(:/pics/red_light.png);
+}
+
+ #DashboardSmall #lbTunnel [passive] {
+    image: url(:/pics/red_light.png);
+}
+
+#DashboardSmall #lbAuthorizationText,
+#DashboardSmall #lbStreamText,
+#DashboardSmall #lbTunnelText {
+    color: white;
+    font: 9px "Roboto";
+}
+
+/*******************************************************************************
+**			            Sidebar
+*******************************************************************************/
+
+#SideBar {
+    background-color:#EDECF3;
+    min-width:120px;
+    max-width:120px;
+}
+
+#SideBar *{
+    font:25 9px "Roboto";
+    color: #080D38;
+}
+
+#SideBar QPushButton{
+    border: none;
+}
+
+/* ------------------------------- Caption ------------------------------- */
+
+#SideBar #frmCaption {
+    background-color: #F0EFF5;
+    border-bottom: 1px solid #CDCBE5;
+    margin-bottom: 10px;
+    min-height: 22px;
+    max-height: 22px;
+}
+
+#SideBar #btMenu {
+    image:url(:/pics/menu_icon_dark.png);
+}
+
+#SideBarStackedWidget #btMenu:checked {
+    image:url(:/pics/back_icon_dark.png);
+}
+
+
+/* ------------------------------- MenuItems ------------------------------- */
+
+#SideBar #btProfile,
+#SideBar #btSettings{
+    min-height:   18px;
+    max-height:   18px;
+    margin-top:    2px;
+    margin-bottom: 2px;
+    background-clip: margin;
+}
+
+#SideBarStackedWidget #btProfile:hover,
+#SideBarStackedWidget #btSettings:hover {
+    color: #FFFFFF;
+    background-color: #503883;
+}
+
+#SideBarStackedWidget #btProfile:checked,
+#SideBarStackedWidget #btSettings:checked {
+    border-left: 3px solid #503883;
+}
+
+#SideBar #btProfile  #image,
+#SideBar #btSettings #image {
+    min-width: 22px;
+    max-width: 22px;
+    image-position: center;
+}
+
+/* ----------- btProfile ----------- */
+
+#SideBar #btProfile #leftSpacing {
+    max-width: 0px;
+}
+
+#btProfile::image {
+    image: url(:/pics/profile_icon_dark.png);
+}
+
+#btProfile::image:hover {
+    image: url(:/pics/profile_icon_hover.png);
+}
+
+#btProfile::image:checked {}
+
+#btProfile::image:checked:hover {}
+
+#btProfile::text {}
+
+#btProfile::text:hover {
+    color: #FFFFFF;
+}
+
+#btProfile::text:hover {
+    color: #FFFFFF;
+}
+
+#btProfile::text:checked {}
+
+#btProfile::text:checked:hover {}
+
+/* ----------- btSettings ----------- */
+
+#SideBar #btSettings #leftSpacing {
+    max-width: 0px;
+}
+
+#btSettings::image {
+    image:url(:/pics/settings_icon_dark.png);
+}
+
+#btSettings::image:hover {
+    image:url(:/pics/settings_icon_hover.png);
+}
+
+#btSettings::image:checked {}
+
+#btSettings::image:checked:hover {}
+
+#btSettings::text {}
+
+#btSettings::text:checked {}
+
+#btSettings::text:hover {
+    color: #FFFFFF;
+}
+
+#btSettings::text:checked:hover {}
+
+/* ------------------------------- Footer ------------------------------- */
+
+#SideBar #lbBrand,
+#SideBar #lblVersion
+{
+    margin-left: 8px;
+}
+
+#SideBar #lblVersion
+{
+    margin-bottom: 7px;
+}
+
+#SideBar #lbBrand{
+    image: url(:/pics/demlabs_logo.png);
+    min-width: 70px;
+    max-width: 70px;
+    min-height: 11px;
+    max-height: 11px;
+    margin-bottom: 3px;
+    image-position: center left;
+}
+
+#SideBar #lblVersion{
+    color: #5A5A5A;
+    font: 7px "Roboto";
+    min-height: 9px;
+    max-height: 9px;
+}
+
+/* ------------------------------- Right part ------------------------------- */
+ScreenOverlaying{
+    background-color: rgba(8, 13, 56, 0.66);
+}
+
+/* Needed for right positioning of background gradient */
+#mainMenuPages {
+    margin-left: -120;
+    padding-left: 120;
+}
+
+/*******************************************************************************
+                                    Settings
+*******************************************************************************/
+
+/* ------- Servers table -------*/
+#ScreenSettings #lblManageServersCaption{
+    font: 25 18px "Roboto";
+    color: #A4A6C1;
+    max-height: 44px;
+    min-height: 44px;
+}
+
+
+/* ------- Servers table -------*/
+#ScreenSettings #tblServers{
+    icon-size:48px;
+    font: 16px "Roboto";
+    color:#080D38;
+    margin:0;
+    padding:0;
+    border-left: 8px solid transparent;
+    background-color: #F6F6FC
+}
+
+#ScreenSettings #tblServers QPushButton,
+#ScreenSettings #tblServers QToolButton {
+    border: none;
+    image-position: center;
+}
+
+#ScreenSettings #tblServers QPushButton,
+#ScreenSettings #tblServers QToolButton,
+#ScreenSettings #tblServers::item:disabled {
+    border-bottom: 1px solid #A4A6C1;
+}
+
+#ScreenSettings #tblServers QPushButton{
+    image: url(:/pics/fav_icon.png);
+}
+
+#ScreenSettings #tblServers QToolButton{
+    image: url(:/pics/more_icon.png);
+}
+
+#ScreenSettings #tblServers QToolButton:hover{
+    image: url(:/pics/more_icon_select.png);
+}
+
+#ScreenSettings #tblServers QPushButton:checked{
+    image: url(:/pics/fav_icon_select.png);
+}
+
+#ScreenSettings #tblServers::item{
+    max-height: 48px;
+    min-height: 48px;
+}
+
+
+/* ------- Menu "More" -------*/
+#ScreenSettings #SettingsMoreMenu{
+    width:136px;
+    height:112px;
+}
+
+#ScreenSettings #SettingsMoreMenu #frmSettingsMoreMenu{
+    border: 0.5 solid #A4A6C1;
+
+    background-color: #F6F6FC;
+
+    padding-top:7.5;            /*+0.5 border*/
+    padding-bottom:7.5;         /*+0.5 border*/
+}
+
+#ScreenSettings #SettingsMoreMenu QPushButton {
+    border: none;
+
+    margin-left:4px;            /*spacing to image*/
+    padding-left:34px;           /*margin + padding + 2 = spacing to text*/
+
+    background-color: #F6F6FC;
+    background-repeat:none;
+    background-position:left center;
+    background-origin:padding;  /*background-color position*/
+    background-clip:margin;     /*background-image position*/
+
+    font: 15px "Roboto";
+    color: #080D38;
+    text-align : left;
+}
+
+#ScreenSettings #SettingsMoreMenu QPushButton:hover {
+    color: #FFFFFF;
+    background-color: #503883;
+}
+
+/* ------- AddServer button -------*/
+
+#ScreenSettings #btAddServer {
+    border-radius: 27px;
+    font: 20px "Roboto";
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    background-color:  transparent;
+    max-width: 240px;
+    max-height: 54px;
+    min-width: 240px;
+    min-height: 54px;
+}
+
+#ScreenSettings #btAddServer:hover {
+    color: #080D38;
+    background-color:  #FFFFFF;
+}
+
+
+/* ------- ScrollBar -------*/
+
+#ScreenSettings QScrollBar:vertical {
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+#ScreenSettings QScrollBar::handle:vertical {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+#ScreenSettings QScrollBar::add-line:vertical,
+#ScreenSettings QScrollBar::sub-line:vertical {
+     height: 0px;
+}
+
+
+/*filling backgrounds for checking sizes:*/
+/*#lbTitle,
+#Logo,
+#lblLogin,
+#edMail,
+#lblPassword,
+#edPassword,
+#lblServer,
+#cbUpstream,
+#cbUpstrea::drop-down,
+#btShow,
+#btSignUp,
+#btLostPassword,
+#lblSignUpWith,
+#lblTextFirst,
+#lblTextSecond,
+#btBack,
+#wgBackSpacing {
+    background-color:red;
+}*/
