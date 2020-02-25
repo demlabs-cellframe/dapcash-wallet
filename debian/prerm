@@ -1,0 +1,19 @@
+#!/bin/bash
+
+case "$1" in
+    purge|remove|abort-upgrade|failed-upgrade|upgrade)
+    [ -f /etc/init.d/dapcash-wallet ] && service dapcash-wallet stop
+    [ -d /opt/dapcash-wallet ] && rm -rf /opt/dapcash-wallet/
+    [ -f /usr/local/bin/DapCashWallet ] && rm /usr/local/bin/DapCashWallet
+    [ -f /etc/init.d/dapcash-wallet ] && rm /etc/init.d/dapcash-wallet
+    systemctl daemon-reload
+    [ -f /usr/share/applications/DapCashWallet.desktop ] && rm /usr/share/applications/DapCashWallet.desktop
+    [ -f /usr/share/pixmaps/DapCashWallet.ico ] && rm /usr/share/pixmaps/DapCashWallet.ico
+    ;;
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0
