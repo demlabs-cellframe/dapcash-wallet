@@ -1,0 +1,12 @@
+[submodule "libdap-qt-ui-qml"]
+	path = libdap-qt-ui-qml
+	url = https://gitlab.demlabs.net/cellframe/libdap-qt-ui-qml.git
+[submodule "libdap-qt"]
+	path = libdap-qt
+	url = https://gitlab.demlabs.net/cellframe/libdap-qt.git
+[submodule "libdap"]
+	path = libdap
+	url = https://gitlab.demlabs.net/cellframe/libdap.git
+[submodule "libdap-crypto"]
+	path = libdap-crypto
+	url = https://gitlab.demlabs.net/cellframe/libdap-crypto.git

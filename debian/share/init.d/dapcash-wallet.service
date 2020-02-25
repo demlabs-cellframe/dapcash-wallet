@@ -1,0 +1,15 @@
+[Unit]
+Description=DapCash Wallet Service
+After=network.target
+
+[Service]
+Type=forking
+OOMScoreAdjust=-1000
+#PIDFile=/opt/dapcash-wallet/DapCashWalletService.pid
+WorkingDirectory=/opt/dapcash-wallet/
+ExecStart=/opt/dapcash-wallet/bin/DapCashWalletService -D
+ExecStop=/opt/dapcash-wallet/bin/DapCashWalletService --stop
+Restart=always
+
+[Install] 
+WantedBy=multi-user.target
