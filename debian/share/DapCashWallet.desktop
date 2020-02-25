@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=DapCash Wallet
+Exec=/opt/dapcash-wallet/bin/DapCashWallet
+Icon=/opt/dapcash-wallet/share/DapCashWallet.ico
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Network;Application;
+Name[ru_RU]=DapCashWallet.desktop

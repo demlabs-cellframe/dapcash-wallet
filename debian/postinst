@@ -1,0 +1,24 @@
+#!/bin/bash -
+
+case "$1" in
+    configure)
+
+    ln -sf /opt/dapcash-wallet/share/init.d/dapcash-wallet.service /etc/systemd/user/dapcash-wallet.service
+    systemctl --system enable /opt/dapcash-wallet/share/init.d/dapcash-wallet.service
+    ln -sf /opt/dapcash-wallet/bin/DapCashWallet /usr/local/bin/DapCashWallet
+    chmod +X /usr/local/bin/DapCashWallet
+    cp -f /opt/cdapcash-wallet/share/DapCashWallet.desktop /usr/share/applications/DapCashWallet.desktop
+	cp -f /opt/dapcash-wallet/share/DapCashWallet.ico	/usr/share/pixmaps/DapCashWallet.ico
+    update-menus
+    echo "For start DapCash Wallet - run 'systemctl start dapcash-wallet'"
+;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 2
+    ;;
+esac
+exit 0
+
+
